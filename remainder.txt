@@ -1,7 +1,0 @@
-* implement set type, using dict
-* implement inset, and use it for set type if possible
-
-*. Add expire functionality. replace dict_XXX() function in cmd_XXX()
-* with db_lookup_key_XXX(). since the cmd_XXX() may touch access time of
-* the obj, and affects LFU or LRU mechanism.
-
