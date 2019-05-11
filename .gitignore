@@ -1,2 +1,2 @@
 ArenaDB.*
-obj/*
+src/*.o
