@@ -9,11 +9,8 @@ INC_DIR = $(PREFIX)/../include
 
 CFLAGS = -Wall -g -I$(INC_DIR)
 
-OBJECTS = benchmark.o client.o command.o config.o db.o debug.o dict.o \
-			event.o experiment.o log.o net.o obj.o sds.o server.o \
-			siphash.o temp.o test.o util.o
-			
 SRC = $(shell find *.c)
+OBJECTS = $(patsubst %.c, %.o, $(SRC))
 
 # Generate dependency file for source and header files each time we remake
 .depend: $(SRC)

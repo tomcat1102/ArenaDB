@@ -1,2 +1,3 @@
 ArenaDB.*
 src/*.o
+src/.depend
